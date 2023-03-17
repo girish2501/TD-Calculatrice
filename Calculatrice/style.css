@@ -1,0 +1,139 @@
+body {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:auto;
+    grid-template-areas:
+      "ecran ecran ecran ecran"
+      "btn-ac btn-ac btn-del btn-del"
+      "btn-1 btn-2 btn-3 btn-div"
+      "btn-4 btn-5 btn-6 btn-fois"
+      "btn-7 btn-8 btn-9 btn-moin"
+      "btn-point btn-0 btn-egal btn-plus";
+    gap: 2px;
+    border: 15px solid #5555c7;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+  
+  
+  .ecran {
+    grid-area: ecran;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #151433;
+    font-size: 1em;
+    padding: 45px;
+  }
+
+
+  #user-input {
+      margin-top: 10px;
+      color: #ccc;
+      position: absolute;
+      top:0;
+      right: 0;
+      margin-right: 10px;
+  }
+  
+  #result {
+    font-size: 2em;
+    position: absolute;
+    bottom: 5px;
+    right:0;
+    margin-right: 10px;
+  }
+  
+  button {
+    color: rgb(0, 0, 0);
+    background-color: #d4d3f2;
+    font-size: 1.5em;
+    border: 20px;
+    padding: 20px;
+  }
+  
+  button#btn-0 {
+    grid-area: btn-0;
+  }
+  
+  button#btn-1 {
+    grid-area: btn-1;
+  }
+  
+  button#btn-2 {
+    grid-area: btn-2;
+  }
+  
+  button#btn-3 {
+    grid-area: btn-3;
+  }
+  
+  button#btn-4 {
+    grid-area: btn-4;
+  }
+  
+  button#btn-5 {
+    grid-area: btn-5;
+  }
+  
+  button#btn-6 {
+    grid-area: btn-6;
+  }
+  
+  button#btn-7 {
+    grid-area: btn-7;
+  }
+  
+  button#btn-8 {
+    grid-area: btn-8;
+  }
+  
+  button#btn-9 {
+    grid-area: btn-9;
+  }
+  
+  button#btn-div {
+    grid-area: btn-div;
+  }
+  
+  button#btn-fois {
+    grid-area: btn-fois;
+  }
+  
+  button#btn-moin {
+    grid-area: btn-moin;
+  }
+  
+  button#btn-point {
+    grid-area: btn-point;
+  }
+  
+  button#btn-egal {
+    grid-area: btn-egal;
+  }
+  
+  button#btn-plus {
+    grid-area: btn-plus;
+
+  }
+  
+  button#btn-ac {
+    padding: 15%;
+    grid-area: btn-ac;
+    grid-column: 1/span 2;
+  }
+  
+  button#btn-del {
+    padding: 15%;
+    grid-area: btn-del;
+    grid-column: 3/span 2;
+  }
+  
